@@ -20,7 +20,7 @@ public class TimeTest : MonoBehaviour
     {
         if (isCounting)
         {
-            countTime += Time.deltaTime;
+            countTime += Time.deltaTime*5;
             finalTime = countTime;
             timeText.text = Mathf.Floor(countTime).ToString();
         }
